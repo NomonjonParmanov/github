@@ -1,0 +1,52 @@
+@import "./style.scss";
+h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.repo {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  .first {
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+    border-top: none;
+    .icon {
+      padding-top: 10px;
+
+      p {
+        font-size: 18px;
+      }
+      .gray {
+        color: gray;
+        font-size: 15px;
+        margin-top: -19px;
+      }
+    }
+    select {
+      outline: none;
+      height: 40px;
+      option {
+        padding: 10px;
+      }
+    }
+  }
+  button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 573.5px;
+    padding: 10px;
+    color: white;
+    background-color: #3fb950;
+    border: none;
+  }
+}
