@@ -1,0 +1,147 @@
+.home{
+  font-size: 0.875rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.first{
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.first-img{
+    margin-left: 5px;
+}
+
+.second{
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: start;
+}
+
+.home2{
+  font-size: 0.875rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  margin-left: 13px;
+}
+
+.second-img{
+  margin-left: 5px;
+}
+
+
+.third{
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.third-img{
+  margin-left: 6px;
+}
+
+
+.fourth{
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: start;
+}
+
+.fourth-img{
+  margin-left: 7px;
+}
+
+
+.fivth{
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: start;
+}
+
+
+.fivth-img{
+  margin-left: 8px;
+}
+
+.sixth{
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.sixth-img{
+  margin-left: 9px;
+}
+.first:hover{
+  background-color: rgb(220, 216, 216);
+  cursor: pointer;
+}
+.second:hover{
+  background-color: rgb(220, 216, 216);
+  cursor: pointer;
+}
+.third:hover{
+  background-color: rgb(220, 216, 216);
+  cursor: pointer;
+}
+
+.fourth:hover{
+  background-color: rgb(220, 216, 216);
+  cursor: pointer;
+}
+
+.fivth:hover{
+  background-color: rgb(220, 216, 216);
+  cursor: pointer;
+}
+
+.sixth:hover{
+  background-color: rgb(220, 216, 216);
+  cursor: pointer;
+}
