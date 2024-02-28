@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1519px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -88,7 +88,7 @@ li {
   color: white;
 }
 
-aside {
+.rights {
   border: 1px solid gray;
   border-top: none;
   padding: 10px;
@@ -129,8 +129,34 @@ aside {
   border-radius: 50%;
 }
 
+.three {
+  display: flex;
+  justify-content: space-between;
+}
+.three .left {
+  border: 1px solid gray;
+}
+.three .left .icon {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.three .left .icon a {
+  color: black;
+}
+.three .left .icon .wd {
+  width: 350px;
+}
+.three .left .icon li {
+  list-style-type: square;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 1280px) {
   .ps {
+    display: none;
+  }
+  .left {
     display: none;
   }
 }

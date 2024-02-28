@@ -88,7 +88,7 @@ li {
   color: white;
 }
 
-aside {
+.rights {
   border: 1px solid gray;
   border-top: none;
   padding: 10px;
@@ -136,6 +136,15 @@ aside {
 }
 @media (max-width: 720px) {
   .dropdown {
+    display: none;
+  }
+  .search input {
+    display: none;
+  }
+  .search .btn-2 {
+    display: none;
+  }
+  aside {
     display: none;
   }
 }
