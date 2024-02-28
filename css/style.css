@@ -87,3 +87,38 @@ li {
   background-color: gray;
   color: white;
 }
+
+aside {
+  border: 1px solid gray;
+  border-top: none;
+  padding: 10px;
+}
+
+.new_repo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new_repo p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+.new_repo button {
+  padding: 10px;
+  color: white;
+  background-color: #3fb950;
+  border: none;
+  border-radius: 10px;
+}
+
+.activity p {
+  color: black;
+  margin-bottom: 1px;
+}
+.activity .pi {
+  width: 325px;
+  padding: 10px;
+  color: gray;
+  border: dashed 1px gray;
+  margin-bottom: 0px;
+}

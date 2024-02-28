@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <header>
-      <nav class="container first_nav">
+    <header style="border-bottom: 1px solid gray">
+      <nav class="first_nav">
         <div class="logo">
           <a href="/">
             <svg
@@ -79,7 +79,7 @@
             </ul>
           </div>
           <button class="btn-1">
-            <a href="">
+            <a href="https://github.com/issues">
               <svg
                 aria-hidden="true"
                 height="16"
@@ -97,7 +97,7 @@
             </a>
           </button>
           <button class="btn-1">
-            <a href="">
+            <a href="https://github.com/pulls">
               <svg
                 aria-hidden="true"
                 height="16"
@@ -114,7 +114,7 @@
             </a>
           </button>
           <button class="btn-1">
-            <a href="">
+            <a href="https://github.com/notifications">
               <svg
                 aria-hidden="true"
                 height="16"
@@ -505,6 +505,37 @@
         </div>
       </nav>
     </header>
+
+    <aside style="width: 350px">
+      <div class="new_repo">
+        <p>Top Repositories</p>
+        <button>
+          <svg
+            aria-hidden="true"
+            height="16"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            data-view-component="true"
+            class="octicon octicon-repo"
+          >
+            <path
+              fill="white"
+              d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"
+            ></path>
+          </svg>
+          New
+        </button>
+      </div>
+      <div class="filter"></div>
+      <div class="activity">
+        <p>Recent activity</p>
+        <p class="pi">
+          When you take actions across GitHub, we’ll provide links to that
+          activity here.
+        </p>
+      </div>
+    </aside>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
