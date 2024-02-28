@@ -128,3 +128,32 @@ aside {
     margin-bottom: 0px;
   }
 }
+
+.ava {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1280px) {
+  .ps {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .dropdown {
+    display: none;
+  }
+  .search {
+    input {
+      display: none;
+    }
+    .btn-2 {
+      display: none;
+    }
+  }
+  aside {
+    display: none;
+  }
+}

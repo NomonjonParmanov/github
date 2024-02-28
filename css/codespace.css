@@ -123,6 +123,22 @@ aside {
   margin-bottom: 0px;
 }
 
+.ava {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1280px) {
+  .ps {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .dropdown {
+    display: none;
+  }
+}
 h1 {
   text-align: center;
   font-size: 30px;
