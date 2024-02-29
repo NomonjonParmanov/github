@@ -141,22 +141,27 @@ li {
   display: flex;
   justify-content: space-between;
 }
-.three .left {
+
+.left {
+  margin-top: 10px;
   border: 1px solid gray;
-  border-top: none;
+  padding-top: 20px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
-.three .left .icon {
+.left .icon {
   display: flex;
   align-items: center;
   width: 300px;
 }
-.three .left .icon a {
+.left .icon a {
   color: black;
 }
-.three .left .icon .wd {
+.left .icon .wd {
   width: 350px;
 }
-.three .left .icon li {
+.left .icon li {
   list-style-type: square;
   padding-bottom: 10px;
 }
@@ -166,6 +171,9 @@ li {
     display: none;
   }
   .left {
+    display: none;
+  }
+  .lefts {
     display: none;
   }
 }
@@ -211,4 +219,36 @@ li {
   margin-top: -10px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.lefts {
+  width: 390px;
+  margin-left: 1090px;
+  padding: 20px;
+  height: 400px;
+  margin-top: -20px;
+}
+.lefts p {
+  font-size: 13px;
+  padding-top: 5px;
+}
+.lefts .is {
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+  padding-top: 10px;
+}
+.lefts .is a {
+  color: black;
+}
+.lefts .s {
+  font-size: 20px;
 }

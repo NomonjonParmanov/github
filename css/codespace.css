@@ -92,6 +92,13 @@ li {
   border: 1px solid gray;
   border-top: none;
   padding: 10px;
+  width: 350px;
+  margin-left: 13px;
+}
+.rights .input {
+  outline: aqua;
+  width: 100%;
+  padding: 3px;
 }
 
 .new_repo {
@@ -121,6 +128,7 @@ li {
   color: gray;
   border: dashed 1px gray;
   margin-bottom: 0px;
+  width: 100%;
 }
 
 .ava {
@@ -135,6 +143,7 @@ li {
 }
 .three .left {
   border: 1px solid gray;
+  border-top: none;
 }
 .three .left .icon {
   display: flex;
@@ -149,7 +158,6 @@ li {
 }
 .three .left .icon li {
   list-style-type: square;
-  padding-bottom: 10px;
 }
 
 @media (max-width: 1280px) {
@@ -160,7 +168,7 @@ li {
     display: none;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 780px) {
   .dropdown {
     display: none;
   }
@@ -170,10 +178,40 @@ li {
   .search .btn-2 {
     display: none;
   }
-  aside {
+  .three {
+    flex-direction: column;
+  }
+  .three .rights {
+    width: 100%;
+  }
+  .three .rights .input {
+    width: 100%;
+  }
+  .new_repo button {
     display: none;
   }
 }
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.repo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.ava {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 h1 {
   text-align: center;
   font-size: 30px;

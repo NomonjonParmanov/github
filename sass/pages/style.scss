@@ -145,24 +145,28 @@ li {
 .three {
   display: flex;
   justify-content: space-between;
+}
+.left {
+  margin-top: 10px;
+  border: 1px solid gray;
+  padding-top: 20px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 
-  .left {
-    border: 1px solid gray;
-    border-top: none;
-    .icon {
-      display: flex;
-      align-items: center;
-      width: 300px;
-      a {
-        color: black;
-      }
-      .wd {
-        width: 350px;
-      }
-      li {
-        list-style-type: square;
-        padding-bottom: 10px;
-      }
+  .icon {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    a {
+      color: black;
+    }
+    .wd {
+      width: 350px;
+    }
+    li {
+      list-style-type: square;
+      padding-bottom: 10px;
     }
   }
 }
@@ -172,6 +176,9 @@ li {
     display: none;
   }
   .left {
+    display: none;
+  }
+  .lefts {
     display: none;
   }
 }
@@ -222,4 +229,34 @@ li {
   height: 20px;
   margin-top: -10px;
   object-fit: cover;
+}
+
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lefts {
+  width: 390px;
+  margin-left: 1090px;
+  padding: 20px;
+  height: 400px;
+  margin-top: -20px;
+  p {
+    font-size: 13px;
+    padding-top: 5px;
+  }
+  .is {
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    a {
+      color: black;
+    }
+  }
+  .s {
+    font-size: 20px;
+  }
 }
