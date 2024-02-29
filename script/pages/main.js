@@ -1,40 +1,48 @@
-let url = "https://api.github.com/users/kamronbek015";
-let input = document.querySelector(".input");
+let repos = [
+  {
+    id: 1,
+    name: "NomonjonParmanov / team - project_n46_uzum",
+    image: "../assets/images/home/logo.png",
+  },
+  {
+    id: 2,
+    name: "NomonjonParmanov/github",
+    image: "../assets/images/home/logo.png",
+  },
+  {
+    id: 3,
+    name: "vohobjonoff/lochinlar",
+    image: "../assets/images/home/logo1.jpg",
+  },
+];
+
 let form = document.querySelector(".input-form");
-let repos = document.querySelector(".repos");
+let input = document.querySelector(".input");
+let reposs = document.querySelector(".repos");
 
-fetch(url)
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    form.addEventListener("keyup", () => {
-      let inputValue = input.value.toLowerCase();
-      fetch(data.repos_url)
-        .then((res) => res.json())
-        .then((reposData) => {
-          let filteredRepos = reposData.filter((repo) =>
-            repo.name.toLowerCase().includes(inputValue)
-          );
-          displayRepos(filteredRepos);
-        });
-    });
-    displayUser(data);
-  });
-
-function displayUser(data) {
-  repos.innerHTML = `
-                <img class="ava" src="${data.avatar_url}" alt="">
-                <p>${data.login}</p>
-            `;
+function displayRepos(repos) {
+  reposs.innerHTML = "";
+  for (let i = 0; i < repos.length; i++) {
+    let repo = repos[i];
+    let repoElement = document.createElement("div");
+    repoElement.classList.add("repo");
+    let imageElement = document.createElement("img");
+    imageElement.classList.add("ava");
+    imageElement.src = repo.image;
+    imageElement.alt = "";
+    let nameElement = document.createElement("p");
+    nameElement.textContent = repo.name;
+    repoElement.appendChild(imageElement);
+    repoElement.appendChild(nameElement);
+    reposs.appendChild(repoElement);
+  }
 }
+form.addEventListener("keyup", () => {
+  let inputValue = input.value.toLowerCase();
+  let filteredRepos = repos.filter((repo) =>
+    repo.name.toLowerCase().includes(inputValue)
+  );
+  displayRepos(filteredRepos);
+});
 
-function displayRepos(filteredRepos) {
-  repos.innerHTML = filteredRepos
-    .map(
-      (repo) => `
-                <div class="repo">
-                    <p>${repo.name}</p>
-            `
-    )
-    .join("");
-}
+displayRepos(repos);
